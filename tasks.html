@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tasks.css">
+    <script defer src="js/user.js"></script>
+    <script defer src="js/tasks.js"></script>
+    <title>Tarefas</title>
+</head>
+<body>
+
+    <div class="loaderContainer">
+        <div class="loader"></div>
+    </div>
+
+    <div class="side-bar hide">
+        <h2>Lista de Usuarios</h2>
+        <ul>
+            <li>
+                <ul>
+                    <li>Username: admin</li>
+                    <li>Password: 123</li>
+                    <li>id: 1</li>
+                    <li>isLogged: true</li><br>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>Username: admin2</li>
+                    <li>Password: 123</li>
+                    <li>id: 2</li>
+                    <li>isLogged: false</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-transparent"></div>
+
+    <div class="preferences">
+        <h1>Configurações</h1>
+        <div>
+            <ul>
+                <li><button>Aparencia</button></li>
+                <li><button>Mudar Senha</button></li>
+                <li><button>Mudar Nome de usuário</button> </li>
+                <button id="deleteUser">Deletar Usuario</button>
+                <li><button id="close-config">Fechar</button> </li>
+            </ul>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <header>
+        <nav>
+            <h1>LOGO</h1>
+            <ul>
+                <li><button id="newTask">Novo</button></li>
+                <li><button id="userInfo">User</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="userInfo caixa hide">
+        <h2 id="nameTitle">Nome usuario</h2>
+        <button id="open-config">Configurações</button>
+        <button id="cancelUser">Cancelar</button>
+        <button id="logout">Sair</button>
+    </div>
+    <form class="addTask caixa hide">
+        <h2>Adicionar Tarefa</h2>
+        <label for="title">Titulo:</label>
+        <input type="text" maxlength="38" id="title">
+        <label for="description">Descrição:</label>
+        <textarea id="description" maxlength="500" cols="30" rows="4"></textarea>
+        <button id="addBtn">Concluir</button>
+        <button id="cancelAdd">Cancelar</button>
+    </form>
+    
+    <main>
+        <div class="todo box box1">
+            <h2>A fazer</h2>
+            <div class="noTask noTaskTodo">
+                <p>
+                    Ainda não possui tarefas...
+                </p>
+            </div>
+        </div>
+        <div class="doing box box2">
+            <h2>Fazendo</h2>
+            <div class="noTask noTaskDoing">
+                <p>
+                    Ainda não possui tarefas...
+                </p>
+            </div>
+        </div>
+        <div class="done box box3">
+            <h2>Feito</h2>
+            <div class="noTask noTaskDone">
+                <p>
+                    Ainda não possui tarefas...
+                </p>
+            </div>
+            <!--<div class="task">
+                <div>
+                    <h3>Titulo</h3>
+                    <p class="hide">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="taskBtn">
+                    <button>Mais</button>
+                    <button>Excluir</button>
+                </div>
+            </div>-->
+        </div>
+    </main>
+    <footer>
+        <div class="copy">&copy ViniciusBianchini</div>
+    </footer>
+</body>
+</html>

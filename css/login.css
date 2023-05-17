@@ -1,0 +1,263 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b4b4b4;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    font-weight: bold;
+    transform: scale(0.95);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #fff;
+    transform: scale(1);
+    border-radius: 6px;
+}
+
+input, select {
+    padding: .25rem .5rem;
+    outline: 0;
+}
+
+.hide {
+    display: none!important;
+}
+
+/* Todo List */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #395169;
+}
+
+.done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+/* ====== LOGIN ====== */
+
+body {
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.cadastrar, .login {
+    width: 30rem;
+    height: 30rem;
+    margin: 4rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    transition: .3s!important;
+}
+
+.cadastrar:hover, .login:hover {
+    box-shadow: 0 0 1rem #333;
+    /*scale: 1.04!important;*/
+    cursor: pointer;
+}
+
+.appear {
+    animation: appear .3s forwards ease-in-out;
+}
+
+.disappear {
+    animation: disappear .2s forwards ease-in-out;
+}
+
+@keyframes appear {
+    0% {
+        transform: translateX(-200%) scale(.5);
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(200%) scale(.8);
+        opacity: 0;
+    }
+}
+
+.cadastrar {
+    display: none;
+}
+
+.cadastrar label,input, .login label,input {
+    font-size: 1.6rem;
+}
+
+.register-div label,  .register-div button{
+    font-size: 1.1rem!important;
+}
+
+.cadastrar input, .login input {
+    font-weight: 300;
+}
+
+.cadastrar *, .login * {
+    margin: .2rem;
+}
+
+.cadastrar h1, .login h1 {
+    font-size: 4rem;
+    padding-bottom: .1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: center;
+}
+
+.divPassword {
+    margin-top: 1.5rem;
+}
+
+#btn-entrar, #btn-cadastrar {
+    width: 86%;
+    height: 1.8rem;
+    font-size: 2rem;
+    padding: 1.4rem;
+    margin-top: 1rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box input {
+    border: none;
+    border-bottom: 1px solid #000;
+    transform: scale(.9);
+    background-color: #00000000
+}
+
+.box div:hover label {
+    color: #102f5e;
+    transition: .3s;
+    opacity: 1;
+}
+.box div:hover input {
+    border-color: #082147;
+    transition: .53s;
+}
+
+.divForm {
+    position: relative;
+}
+
+.divForm label {
+    position: absolute;
+    bottom: 4px;
+    left: 1.5rem;
+    z-index: 1;
+    opacity: .8;
+    z-index: -1;
+}
+
+.inputClick {
+    transform: translate(-5%, -170%);
+    transition: .2s ease-in-out;
+    opacity: 1;
+    font-size: 1.1rem!important;
+    color: #102f5e;
+}
+.inputOut {
+    transform: translate(0);
+    transition: .2s ease-in-out;
+    opacity: .7;
+}
+
+label:hover {
+    cursor: text;
+}
+
+.register-div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-div * {
+    font-size: 10px;
+}
+
+#register-btn, #login-btn {
+    width: min-content;
+    font-size: 1.4rem;
+    border: none;
+    color:#466594;
+    background-color: #ffffff00;
+    padding: 2px;
+    margin-left: .4rem;
+    margin: 3px;
+}
+
+#register-btn:hover, #login-btn:hover {
+    color:#fff;
+    background-color: #102f5e;
+    border-radius: 6px;
+}
+
+.copy {
+    margin-top: 1.5rem;
+    margin-bottom: -.7rem;
+}

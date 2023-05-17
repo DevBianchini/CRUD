@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <form class="cadastrar">
+        <h1>Cadastrar</h1>
+        <div class="box">
+            <div class="divForm divUsername">
+                <label for="user" class="nameRegisLabel">Usuário</label>
+                <input autocomplete="off" type="text" id="user">
+            </div>
+            <div class="divForm divPassword">
+                <label for="password" class="passRegisLabel">Senha</label>
+                <input type="password" id="password">
+            </div>
+        </div>
+        <button id="btn-cadastrar">Cadastrar</button>
+        <div class="register-div">
+            <label for="">Já possui registro?</label>
+            <button id="login-btn">Login</button>
+        </div>
+        <div class="copy">&copy ViniciusBianchini</div>
+    </form>
+
+    <form class="login">
+        <h1>Login</h1>
+        <div class="box">
+            <div class="divForm divUsername">
+                <label id="namePlaceholder" for="user" class="nameLoginLabel">Usuário</label>
+                <input autocomplete="off" type="text" id="userLogin">
+            </div>
+            <div class="divForm divPassword">
+                <label for="password" class="passLoginLabel">Senha</label>
+                <input type="password"id="passwordLogin">
+            </div>
+        </div>
+        <button id="btn-entrar">Entrar</button>
+        <div class="register-div">
+            <label for="">Não possui registro?</label>
+            <button id="register-btn">Cadastrar</button>
+        </div>
+        <div class="copy">&copy ViniciusBianchini</div>
+    </form>
+</body>
+</html>
